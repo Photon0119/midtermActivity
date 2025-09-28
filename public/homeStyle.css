@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+* {}
+
+
+
+body {
+    max-width: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/* body::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/hehe.fw.png') top center no-repeat;
+    opacity: .3;
+} */
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+div,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+img {
+    display: block;
+
+}
+
+.nav-width {
+    width: 100%;
+    background-color: #040C18;
+}
+
+.nav-top {
+    width: 100%;
+    max-width: 1600px;
+
+    background-color: #040C18;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    color: #ffff;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+
+.gpt{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 100px;
+}
+
+.navItems {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.navItems ul {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-left-right {
+    color: #ffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+}
+
+.button-left,
+.button-right {
+    max-width: 150px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-radius: 9px;
+    display: flex;
+}
+
+.button-right {
+    background-color: #FF4820;
+}
+
+.banner-width {
+    width: 100%;
+    background-color: #040C18;
+}
+
+.banner-container {
+    background-color: #040C18;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.banner-left {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-left: 20px;
+}
+
+.banner-left h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.3;
+    max-width: 650px;
+    width: 100%;
+    text-align: start;
+
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.banner-left p {
+    padding-top: 30px;
+    text-align: start;
+    width: 100%;
+    max-width: 450px;
+
+    color: #ffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner-input {
+    padding-top: 40px;
+    max-width: 650px;
+    width: 100%;
+
+    display: flex;
+
+}
+
+.email-button a {
+
+    color: #ffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner-input input {
+    padding-left: 20px;
+    width: 80%;
+    background-color: #052D56;
+    border: none;
+}
+
+.banner-input .email-button {
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #FF4820;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.banner-right {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    width: 100%;
+
+    background-color: #040C18;
+
+}
+
+.icons-holder {
+    background-color: #040C18;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+
+
+/* .box-top div hr,
+.box1 div hr,
+.box2 div hr,
+.box3 div hr {
+    width: 38px;
+  border: none;
+  height: 3px; 
+  background: linear-gradient(to right, #AE67FA, #F49867);
+  margin: 20px 0; 
+  border-radius: 2px; 
+} */
+
+.what-gpt {
+    width: 100%;
+    background-color: #040C18;
+}
+
+.box-gpt-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #052D56;
+}
+
+.box-top {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.box-top div hr {
+    width: 38px;
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    margin: 20px 0;
+    border-radius: 2px;
+
+}
+
+.box-top div {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.box-top span {
+    text-align: start;
+    width: 100%;
+
+    font-size: 20px;
+
+    color: #ffff;
+
+}
+
+.box-top section p {
+    text-align: start;
+    width: 75%;
+
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    color: #81AFDD;
+
+}
+
+.box-top section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box-mid {
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+
+}
+
+
+
+.box-mid span:first-child {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 70%;
+    padding-right: 500px;
+    text-align: start;
+}
+
+.box-mid span:nth-child(2) {
+    color: #FF8A71;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-bottom {
+    width: 100%;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 50px;
+}
+
+.box1,
+.box2,
+.box3 {
+    text-align: start;
+}
+
+.box1 hr,
+.box2 hr,
+.box3 hr {
+    width: 38px;
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+.box1 div,
+.box2 div,
+.box3 div {
+    padding-bottom: 50px;
+
+    text-align: start;
+    width: 100%;
+
+    font-size: 20px;
+
+    color: #ffff;
+}
+
+.box1 p,
+.box2 p,
+.box3 p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    color: #81AFDD;
+}
+
+.future {
+    width: 100%;
+    background-color: #040C18;
+}
+
+.future-components-holder {
+    max-width: 1600px;
+    width: 100%;
+
+    display: flex;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.future-left {
+    width: 40%;
+}
+
+.future-left span:first-child {}
+
+.future-right {
+    width: 55%;
+}
+
+.future-box1 {
+    display: flex;
+}
+
+.future-box1 span {
+    color: #ffff;
+    text-align: start;
+    display: block;
+}
+
+.future-box1 p {
+    color: #81AFDD;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: start;
+    padding-left: 50px;
+    padding-right: 150px;
+}
+
+.future-box1 hr {
+    width: 38px;
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    margin: 20px 0;
+    border-radius: 2px;
+
+}
+
+.future-box1 div {
+    padding-bottom: 50px;
+}
+
+.future-box1 div:first-child {
+    padding-right: 100px;
+    width: 30%;
+}
+
+.future-box1 div:nth-child(2) {
+    width: 70%;
+
+}
+
+.future-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.future-left span:first-child {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    text-align: start;
+    padding-right: 225px;
+
+}
+
+.future-left span:nth-child(2) {
+    text-align: start;
+    width: 100%;
+    padding-top: 50px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #FF8A71;
+}
+
+
+.apps {
+    width: 100%;
+    background-color: #040C18;
+    padding-bottom: 200px;
+}
+
+.apps-component-holder {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #040C18;
+}
+
+.app-left,
+.app-right {
+    width: 50%;
+}
+
+.app-left {
+    background-image: url(/images/VR.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    display: flex;
+    justify-content: start;
+
+}
+
+.app-right {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-top: 150px;
+}
+
+.app-right span {
+    width: 100%;
+}
+
+.app-right p {
+    width: 100%;
+}
+
+.app-right span:first-child {
+    color: #71E5FF;
+}
+
+.app-right span:first-child,
+.app-right span:nth-child(4) {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.app-right span:nth-child(2) {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 350px;
+}
+
+.app-right p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #81AFDD;
+}
+
+.app-right span:nth-child(4) {
+    color: #FF8A71;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.request {
+    width: 100%;
+    background-color: #040C18;
+}
+
+.request-component-holder {
+    max-width: 1600px;
+    width: 100%;
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+
+}
+
+.request-component-holder div:first-child {
+    width: 80%;
+    text-align: start;
+    padding-left: 50px;
+}
+
+.request-component-holder div:nth-child(2) {
+    width: 10%;
+
+}
+
+.request-left p {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.request-left span {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.request-right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #000000;
+    border-radius: 50px;
+}
+
+.request-right a {
+    color: #ffff;
+}
+
+.happening-txt {
+    width: 100%;
+    background-color: #040C18;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+.happening-component-holder {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+.happening-txt-holder {
+    text-align: start;
+    width: 50%;
+}
+
+.happening-txt-holder span {
+    font-size: 50px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features {
+    width: 100%;
+    background-color: #040C18;
+    padding-bottom: 200px;
+}
+
+.features-component-holder {
+    max-width: 1600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+
+
+}
+
+.features-box1 {
+    width: 40%;
+
+    color: #ffff;
+    background-color: #042C54;
+}
+
+.features-box2,
+.features-box3 {
+    width: 28%;
+
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.features-box1 div:first-child {
+    background-image: url(/images/rectangle1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 100%;
+}
+
+.inner-box2 div:first-child {
+    background-image: url(/images/rectangle2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.inner-box3 div:first-child {
+    background-image: url(/images/rectangle3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.inner-box4 div:first-child {
+    background-image: url(/images/rectangle4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.inner-box5 div:first-child {
+    background-image: url(/images/rectangle5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.inner-box1,
+.inner-box2 div:nth-child(2),
+.inner-box3 div:nth-child(2),
+.inner-box4 div:nth-child(2),
+.inner-box5 div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+.inner-box1 span,
+.inner-box2 div:nth-child(2) span,
+.inner-box3 div:nth-child(2) span,
+.inner-box4 div:nth-child(2) span,
+.inner-box5 div:nth-child(2) span {
+
+    width: 100%;
+}
+
+.inner-box1 {
+    padding-left: 20px;
+}
+
+.inner-box1 span:first-child {
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.inner-box1 span:nth-child(2) {
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inner-box1 span:nth-child(3) {
+    font-size: 15px;
+    padding-top: 300px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+
+.inner-box2 div:nth-child(2) span:first-child,
+.inner-box3 div:nth-child(2) span:first-child,
+.inner-box4 div:nth-child(2) span:first-child,
+.inner-box5 div:nth-child(2) span:first-child {
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.inner-box2 div:nth-child(2) span:nth-child(2),
+.inner-box3 div:nth-child(2) span:nth-child(2),
+.inner-box4 div:nth-child(2) span:nth-child(2),
+.inner-box5 div:nth-child(2) span:nth-child(2) {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding-bottom: 60px;
+}
+
+.inner-box2 div:nth-child(2) span:nth-child(3),
+.inner-box3 div:nth-child(2) span:nth-child(3),
+.inner-box4 div:nth-child(2) span:nth-child(3),
+.inner-box5 div:nth-child(2) span:nth-child(3) {
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 20px;
+
+}
+
+.inner-box2,
+.inner-box3,
+.inner-box4,
+.inner-box5 {
+    background-color: #042C54;
+}
+
+.access {
+    width: 100%;
+    background-color: #042C54;
+}
+
+.access-component-holder {
+    max-width: 1600px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #042C54;
+}
+
+.access1 {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.access1 span {
+    font-size: 62px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    padding: 0 250px;
+    padding-bottom: 100px;
+}
+
+.access1-BTN a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    border: solid 1px #ffff;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffff;
+}
+
+.access2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.access2-box1,
+.access2-box2,
+.access2-box3 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    width: 20%;
+}
+
+.access2-box1 span,
+.access2-box2 span,
+.access2-box3 span {
+    width: 100%;
+}
+
+.access2-box1 span:first-child {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.access2-box1 span:nth-child(2) {
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.access2-box1 span:nth-child(2),
+.access2-box2 span,
+.access2-box3 span {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.access2-box2 span:first-child,
+.access2-box3 span:first-child {
+
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
